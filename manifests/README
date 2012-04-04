@@ -1,0 +1,9 @@
+To prepare java archive tar existing installation following naming convention
+
+	jdk.1.6.0_26_x64.tgz 
+	^^^^^^^^^^^^ ^^^ ^^^
+	      1       2   3
+
+1. Name archive as jdk dir in it
+2. Add architecture suffix (x64 or i586)
+3. tar with -zcf and set extension tgz
