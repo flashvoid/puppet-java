@@ -11,6 +11,6 @@ class java  (
 	  url => "$url",
 	  destination_dir => $destination_dir,
 	  extracted_dir => "jdk.$version",
-	  postextract_command => "ln -fs /usr/java/jdk.$version/bin/java /usr/bin/java",
+    postextract_command => "ln -fs /usr/java/jdk.$version /usr/java/latest && cp /usr/java/latest/java.sh /etc/profile.d/",
 	}
 }
